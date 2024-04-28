@@ -4,7 +4,7 @@ import java.awt.*
 import java.awt.image.BufferedImage
 import javax.imageio.ImageIO
 
-// Read RGB image & show in ImageJ (won't work for multichannel!)
+// Read RGB image 
 double downsample = 1.0
 def server = getCurrentImageData().getServer()
 int w = (server.getWidth() / downsample) as int
@@ -28,8 +28,8 @@ for (detection in getDetectionObjects()) {
 g2d.dispose()
 
 def name = getProjectEntry().getImageName() //+ '.tiff'
-def path = buildFilePath(PROJECT_BASE_DIR, 'detection mask')
+def path = buildFilePath(PROJECT_BASE_DIR, 'detection', "mask_images")
 mkdirs(path)
 def fileoutput = new File( path,name+'.'+'png')
 ImageIO.write(img, 'png', fileoutput)
-println('Results exporting...')
+println('Results exporting done!')
