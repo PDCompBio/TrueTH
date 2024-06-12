@@ -38,5 +38,5 @@ The results are stored in the 'detection' directory in the QuPath project direct
 Create a GitHub issue. We will typically respond within three day or one week.
 
 ## Citation
-If you use TrueTH in your work, please cite the TrueTH publication as follows:
+If you use TrueTH in your work, please cite the TrueTH publication as follows:  
 Chen J, Meng Q, Zhang Y, et al. TrueTH: A user-friendly deep learning approach for robust dopaminergic neuron detection. Neuroscience Letters. doi:10.1016/j.neulet.2024.137871
